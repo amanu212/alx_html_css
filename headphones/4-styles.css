@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+.footer-hero {
+  background-image: url('images/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: lowercase;
+}
+
+.footer-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.footer-content h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer-content .cta-button {
+  background-color: #FF6565;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer-content .cta-button:hover {
+  background-color: #e14e4e;
+}
+
+.footer-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-top: 30px;
+  color: #ccc;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .footer-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .footer-content p {
+    font-size: 0.95rem;
+  }
+
+  .footer-content .cta-button {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
