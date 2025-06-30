@@ -1,79 +1,129 @@
-/* Reset & base styles */
-body {
+/* Reset */
+body, h1, p, a {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  z-index: 1;
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Container Utility */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header and Navigation */
+.header {
+  position: relative;
+  color: white;
 }
 
 .logo {
   height: 30px;
 }
 
-nav ul {
-  list-style: none;
+.nav {
   display: flex;
   gap: 30px;
 }
 
-nav a {
-  text-decoration: none;
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+/* Banner Section */
+.banner {
+  position: relative;
+  text-align: center;
   color: white;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-text h1 {
+  font-size: 72px;
   font-weight: bold;
 }
 
-/* Banner */
-.banner {
-  height: 100vh;
-  background-image: url('images/Object.png');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
+.subtext span {
+  margin: 0 10px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #C271FF;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px #A34FE0;
+}
+
+.learn-text {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #C271FF;
+}
+
+/* Quotes Section */
+.quote {
+  background-color: #C271FF;
+  padding: 60px 20px;
   color: white;
+  text-align: center;
 }
 
-.banner-content h1 {
-  font-size: 60px;
-  margin: 0;
+.quote .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
 }
 
-.subtitle span {
-  margin: 10px 15px;
-  font-weight: 600;
+.quote img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.quote-message {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.quote-author {
+  margin-top: 10px;
   font-size: 16px;
 }
 
-.register-btn {
-  background-color: #C271FF;
-  border: none;
-  padding: 12px 24px;
-  margin-top: 20px;
-  border-radius: 20px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-}
-
-.banner-content p {
-  margin-top: 25px;
-  font-size: 18px;
-}
-
-.highlight {
-  color: #C271FF;
+.quote-author span {
+  display: block;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 14px;
+  opacity: 0.8;
 }
