@@ -1,129 +1,99 @@
-/* Reset */
-body, h1, p, a {
+/* General Reset and Font */
+body {
   margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fff;
+  color: #333;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+/* SECTION: Videos List */
+section.videos-list {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: white;
 }
 
-/* Container Utility */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+.videos-list h2 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #071629;
+  margin-bottom: 60px;
 }
 
-/* Header and Navigation */
-.header {
-  position: relative;
-  color: white;
+.videos-list h2 span {
+  color: #C271FF;
+  font-weight: 700;
 }
 
-.logo {
-  height: 30px;
-}
-
-.nav {
+.videos {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
-.header .container {
+.video-card {
+  width: 255px;
+  text-align: left;
+}
+
+.video-card img.thumbnail {
+  width: 100%;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+}
+
+.video-card .play-button {
+  position: relative;
+  top: -90px;
+  left: 110px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+}
+
+.video-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0 5px;
+  color: #071629;
+}
+
+.video-card p.description {
+  font-size: 14px;
+  color: #838383;
+  margin-bottom: 10px;
+}
+
+.video-card .author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.video-card .author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.video-card .author span {
+  font-size: 14px;
+  color: #C271FF;
+  font-weight: 600;
+}
+
+.video-card .rating {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
-}
-
-/* Banner Section */
-.banner {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.hero-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.banner-text h1 {
-  font-size: 72px;
-  font-weight: bold;
-}
-
-.subtext span {
-  margin: 0 10px;
-  font-size: 16px;
-  letter-spacing: 2px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 25px;
-  background-color: #C271FF;
-  border-radius: 20px;
-  font-weight: bold;
-  box-shadow: 0 4px #A34FE0;
-}
-
-.learn-text {
-  margin-top: 40px;
-  font-size: 20px;
+  font-size: 14px;
   color: #C271FF;
 }
 
-/* Quotes Section */
-.quote {
-  background-color: #C271FF;
-  padding: 60px 20px;
-  color: white;
-  text-align: center;
-}
-
-.quote .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 900px;
-}
-
-.quote img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
-
-.quote-message {
-  font-size: 18px;
-  line-height: 1.6;
-  max-width: 600px;
-}
-
-.quote-author {
-  margin-top: 10px;
-  font-size: 16px;
-}
-
-.quote-author span {
-  display: block;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 14px;
-  opacity: 0.8;
+.video-card .rating img {
+  height: 14px;
+  margin-right: 2px;
 }
