@@ -1,88 +1,136 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SmileSchool - Videos</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+  <header class="main-header">
+    <nav class="navbar">
+      <img src="images/logo.png" alt="logo" class="logo" />
+      <ul class="nav-links">
+        <li><a href="#">COURSES</a></li>
+        <li><a href="#">PRICING</a></li>
+        <li><a href="#">LOGIN</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section class="videos-section">
-    <div class="videos-header">
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Get schooled</h1>
+      <div class="hero-tags">
+        <span>SMILES</span>
+        <span>GRIN</span>
+        <span>LAUGH</span>
+      </div>
+      <button class="register-btn">REGISTER FOR FREE</button>
+    </section>
+
+    <!-- Pro Teachers Section -->
+    <section class="teachers">
+      <h2>Learn from the pros</h2>
+      <div class="teacher-cards">
+        <div class="teacher-card">
+          <img src="images/1.png" alt="Phillip Massey">
+          <h3>Phillip Massey</h3>
+          <p>« Smile of the year » 2018 - 2019</p>
+        </div>
+        <div class="teacher-card">
+          <img src="images/2.png" alt="Nannie Lawrence">
+          <h3>Nannie Lawrence</h3>
+          <p>Best « little smile » 2017</p>
+        </div>
+        <div class="teacher-card">
+          <img src="images/3.png" alt="Bruce Walters">
+          <h3>Bruce Walters</h3>
+          <p>Best « Friend Smile » live performance 2019</p>
+        </div>
+        <div class="teacher-card">
+          <img src="images/4.png" alt="Henry Hughes">
+          <h3>Henry Hughes</h3>
+          <p>« 24h smiles » winner 2016 - 2019</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+      <div class="quote-image">
+        <img src="images/5.png" alt="weather presenter">
+      </div>
+      <div class="quote-text">
+        <blockquote>
+          « Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun! »
+        </blockquote>
+        <h3>John Smith</h3>
+        <p>Weather Presenter</p>
+      </div>
+    </section>
+
+    <!-- Video Tutorials Section -->
+    <section class="videos-section">
       <h2>Most <span class="highlight">popular</span> tutorials</h2>
-    </div>
-    <div class="videos-container">
-      <div class="video-card">
-        <div class="thumbnail">
-          <img src="images/7.png" alt="Diagonal Smile">
-          <img class="play-btn" src="images/Object.png" alt="Play">
+      <div class="videos-container">
+        <!-- Repeat for each video -->
+        <div class="video-card">
+          <div class="thumbnail">
+            <img src="images/7.png" alt="Diagonal Smile">
+            <img class="play-btn" src="images/Object.png" alt="Play">
+          </div>
+          <h3>Diagonal Smile</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="video-info">
+            <img src="images/8.png" alt="Phillip Massey">
+            <span>Phillip Massey</span>
+          </div>
+          <div class="video-rating">
+            <img src="images/rating.png" alt="rating">
+            <span>8 min</span>
+          </div>
         </div>
-        <h3>Diagonal Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-        <div class="video-info">
-          <img src="images/8.png" alt="Philip Massey">
-          <span class="author">Phillip Massey</span>
+
+        <div class="video-card">
+          <div class="thumbnail">
+            <img src="images/9.png" alt="Sad Smile">
+            <img class="play-btn" src="images/Object.png" alt="Play">
+          </div>
+          <h3>Sad Smile</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="video-info">
+            <img src="images/8.png" alt="Phillip Massey">
+            <span>Phillip Massey</span>
+          </div>
+          <div class="video-rating">
+            <img src="images/rating.png" alt="rating">
+            <span>8 min</span>
+          </div>
         </div>
-        <div class="video-rating">
-          <img src="images/rating.png" alt="Rating">
-          <span class="duration">8 min</span>
+
+        <!-- Add more video cards similarly -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footer">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="logo">
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
         </div>
       </div>
-
-      <div class="video-card">
-        <div class="thumbnail">
-          <img src="images/9.png" alt="Sad Smile">
-          <img class="play-btn" src="images/Object.png" alt="Play">
-        </div>
-        <h3>Sad Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-        <div class="video-info">
-          <img src="images/8.png" alt="Philip Massey">
-          <span class="author">Phillip Massey</span>
-        </div>
-        <div class="video-rating">
-          <img src="images/rating.png" alt="Rating">
-          <span class="duration">8 min</span>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <div class="thumbnail">
-          <img src="images/30b8649b-5f48-40b3-8cbb-b945a5549597.png" alt="Natural Smile">
-          <img class="play-btn" src="images/Object.png" alt="Play">
-        </div>
-        <h3>Natural Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-        <div class="video-info">
-          <img src="images/8.png" alt="Philip Massey">
-          <span class="author">Phillip Massey</span>
-        </div>
-        <div class="video-rating">
-          <img src="images/rating.png" alt="Rating">
-          <span class="duration">8 min</span>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <div class="thumbnail">
-          <img src="images/663c5f7c-83f1-421e-9637-6d2d3c5d421f.png" alt="Happy Smile">
-          <img class="play-btn" src="images/Object.png" alt="Play">
-        </div>
-        <h3>Happy Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-        <div class="video-info">
-          <img src="images/8.png" alt="Philip Massey">
-          <span class="author">Phillip Massey</span>
-        </div>
-        <div class="video-rating">
-          <img src="images/rating.png" alt="Rating">
-          <span class="duration">8 min</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
+      <p>© SmileSchool 2020</p>
+    </section>
+  </footer>
 </body>
+
 </html>
