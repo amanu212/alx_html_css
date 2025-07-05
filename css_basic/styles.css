@@ -1,0 +1,53 @@
+/* Flexbox Layout */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  display: flex;
+  flex: auto;
+}
+
+article {
+  flex: 2;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border-right: 1px solid #ccc;
+  color: #333;
+}
+
+aside {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  color: #444;
+}
+
+header, footer {
+  padding: 15px 20px;
+  background-color: #e0e0e0;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* ✅ Logo styling */
+.logo {
+  font-size: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Optional extras */
+ul {
+  padding-left: 20px;
+}
+
+h2, h3 {
+  margin-top: 0;
+}

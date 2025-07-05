@@ -1,0 +1,203 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero span {
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4c60;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff4c60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Pro Teachers */
+.pro-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.pro-section h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.pro-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.pro-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.pro-card p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Quote Section */
+.quote-section {
+  background-color: #f0f0f0;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.quote-section blockquote {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Popular Tutorials */
+.videos-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.videos-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.videos-header h2 {
+  font-size: 32px;
+}
+
+.videos-header .highlight {
+  color: #ff4c60;
+}
+
+.videos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 15px;
+  background-color: #fafafa;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.thumbnail img.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  transform: translate(-50%, -50%);
+}
+
+.video-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.video-info img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.video-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+footer i {
+  margin: 0 10px;
+  font-size: 18px;
+}
