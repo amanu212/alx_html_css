@@ -1,18 +1,65 @@
-.item, .pentagon.animated {
-  transition: transform 0.3s ease, opacity 0.5s;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
+/* === RESET & BASE STYLES === */
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fff;
+  color: #333;
 }
 
-.item:hover, .pentagon:hover {
-  transform: scale(1.1);
-}
-
-/* Animation Keyframes */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
+/* === ANIMATION KEYFRAMES === */
+@keyframes bounce {
+  0%, 100% {
     transform: translateY(0);
   }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* === WHAT WE DO SECTION ANIMATIONS === */
+.service-item {
+  animation: bounce 2s infinite;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+}
+
+/* === OUR RESULTS SECTION ANIMATIONS === */
+.result-item {
+  animation: bounce 2s infinite;
+  transition: transform 0.3s ease;
+}
+
+.result-item:hover {
+  transform: rotate(5deg);
+}
+
+/* === PENTAGON SHAPE (IF USED) === */
+.result-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  background-color: #FF6565;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  text-align: center;
+}
+
+.result-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.result-item p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #fff;
 }

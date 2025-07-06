@@ -1,64 +1,64 @@
+/* === RESET & BASE STYLES === */
 body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
   margin: 0;
-  padding: 0;
-}
-
-.contact-section {
-  max-width: 600px;
-  margin: 50px auto;
-  background: #fff;
-  padding: 40px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  border-radius: 10px;
-}
-
-.contact-section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fff;
   color: #333;
 }
 
-.contact-form .form-group {
-  margin-bottom: 20px;
+/* === CONTACT US SECTION === */
+.contact-us {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Contact Form Layout */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Form Labels */
 .contact-form label {
   display: block;
   margin-bottom: 8px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
+/* Form Inputs */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 1em;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #FF6565;
-  box-shadow: 0 0 5px rgba(255, 101, 101, 0.5);
-}
-
+/* Form Button */
 .contact-form button {
-  width: 100%;
-  padding: 15px;
-  background-color: #FF6565;
-  border: none;
-  border-radius: 6px;
+  background-color: #d73953;
   color: #fff;
-  font-size: 1.1em;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.contact-form button:hover {
-  background-color: #e14a4a;
+.contact-form button:hover,
+.contact-form button:active {
+  background-color: #b62d47;
 }

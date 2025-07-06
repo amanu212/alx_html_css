@@ -1,32 +1,93 @@
-.our-results-section {
-  padding: 50px 20px;
-  background-color: #f9f9f9;
+/* === RESET & BASE STYLES === */
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* === OUR RESULTS SECTION === */
+.our-results {
+  padding: 60px 20px;
+  background-color: #fff;
   text-align: center;
 }
 
+/* Section Title */
 .section-title {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin-bottom: 40px;
+  font-weight: 700;
 }
 
-.results-container {
+/* Results Layout */
+.results {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
   flex-wrap: wrap;
-  gap: 30px;
 }
 
-.result-card {
-  flex: 1 1 250px;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/* Each Result Item */
+.result-item {
+  background-color: #f9f9f9;
+  padding: 30px 20px;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
-.result-card span {
-  font-size: 40px;
+/* Hover Effect */
+.result-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon Styling */
+.result-item i {
+  font-size: 48px;
+  color: #d73953;
+  margin-bottom: 20px;
   display: block;
-  margin-bottom: 15px;
-  color: #FF6565;
 }
+
+/* Result Item Title */
+.result-item h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+/* Result Item Description */
+.result-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* === ICON FONT === */
+@font-face {
+  font-family: 'Holberton School Icon';
+  src: url('fonts/holberton_school-icon.eot');
+  src: url('fonts/holberton_school-icon.eot?#iefix') format('embedded-opentype'),
+       url('fonts/holberton_school-icon.woff') format('woff'),
+       url('fonts/holberton_school-icon.ttf') format('truetype'),
+       url('fonts/holberton_school-icon.svg#HolbertonSchoolIcon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.holberton_school-icon {
+  font-family: 'Holberton School Icon';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Icon Content Codes */
+.icon-trophy:before { content: "\e004"; }
+.icon-users:before { content: "\e005"; }
+.icon-star:before { content: "\e006"; }

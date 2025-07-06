@@ -1,3 +1,10 @@
+/* === CSS VARIABLES === */
+:root {
+  --primary-color: #FF6565;
+  --text-color: #FFFFFF;
+  --max-width: 1000px;
+}
+
 /* === RESET & BASE STYLES === */
 * {
   margin: 0;
@@ -7,13 +14,25 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  color: white;
+  color: var(--text-color);
   background-color: #000;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === CONTAINER === */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* === HERO SECTION === */
 .hero {
-  background-image: url("images/hero-background.jpg"); /* Corrected to JPG */
+  background-image: url("images/headphones_hero_1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,9 +45,6 @@ body {
 
 /* === NAVBAR === */
 .navbar {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,20 +61,19 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 400;
 }
 
 .nav-links a:hover,
 .nav-links a:active {
-  color: #FF6565;
+  color: var(--primary-color);
 }
 
 /* === HERO CONTENT === */
 .hero-content {
   text-align: center;
-  max-width: 700px;
   margin: 100px auto 40px;
 }
 
@@ -74,13 +89,13 @@ body {
 }
 
 .cta-button {
-  background-color: #FF6565;
+  background-color: var(--primary-color);
   border: none;
   padding: 12px 30px;
   border-radius: 30px;
   font-size: 1rem;
   font-weight: bold;
-  color: white;
+  color: var(--text-color);
   cursor: pointer;
   margin-bottom: 20px;
   transition: opacity 0.3s ease;
@@ -116,7 +131,7 @@ body {
   .logo {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .hero-content {

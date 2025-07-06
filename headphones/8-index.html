@@ -1,15 +1,47 @@
-<header>
-  <div class="logo">HEADPHONES</div>
-  <nav class="nav-links" id="nav-links">
-    <a href="#what-we-do">What we do</a>
-    <a href="#our-results">Our results</a>
-    <a href="#contact">Contact us</a>
-  </nav>
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Headphones - Hamburger Menu</title>
 
-<script src="8-script.js"></script>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="8-styles.css" />
+</head>
+<body>
+
+  <!-- Navbar with Hamburger -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo_headphones.png" alt="Headphones logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">what we do</a></li>
+      <li><a href="#">our results</a></li>
+      <li><a href="#">contact us</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Example hero content -->
+  <header class="hero">
+    <h1>Welcome to Headphones</h1>
+  </header>
+
+  <!-- Script -->
+  <script src="8-script.js"></script>
+</body>
+</html>
+✅ 8-script.js:
+js
+Copy code
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
